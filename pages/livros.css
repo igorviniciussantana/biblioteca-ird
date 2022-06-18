@@ -1,0 +1,114 @@
+button{
+    width: 70%
+    
+    
+    }
+    .mainLivros{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 76px;
+    
+    
+    }
+    
+
+    
+    .livrosTitle{
+    
+    color: #CEF5FF;
+    margin: 0
+    
+    }
+    
+    .livrosInput{
+    background-color: #CEF5FF;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    font-family: 'Poppins';
+    color:#09181C;
+    }
+    
+    .livrosInput::placeholder {
+        color: #67787C;
+      }
+    
+      .livrosButton{
+    border: none;
+    background-color: #30C0CD;
+    color:#CEF5FF;
+    border-radius: 2rem;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 10px 0;
+    letter-spacing: 0.08em;
+    transition: 500ms;
+    
+      }
+    
+      .livrosButton:hover{
+        background-color: #2ba4af;
+        transition: 500ms;
+        cursor: pointer;
+        letter-spacing: 0.3em;
+        
+    
+      }
+    
+      .livroCard{
+    width: 22%;
+    min-height: 200px;
+    background-color: #0F272E;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 20px 20px;
+    justify-content: center;
+    
+      }
+    
+      .livroCard h1{
+    color: #30C0CD;
+    border-left: 5px solid #30C0CD;
+    line-height: 120%;
+    padding-left: 5px;
+    margin:0
+    
+      }
+    
+      .livroCard p{
+        margin:0;
+        color: #CEF5FF;    
+          }
+    
+          .buttonsDiv{
+    display: flex;
+    padding-right: 20px;
+    
+          }
+    
+          .buttonsDiv button{
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+          }
+    
+          .buttonAutor{
+    border-radius: 20px 0px 0px 20px;
+    background-color: #30C0CD;
+    color: white;
+    font-family: 'Poppins';
+    
+          }
+          .buttonDeletar{
+            border-radius: 0px 20px 20px 0px;
+            font-family: 'Poppins';
+            background-color: #CEF5FF;
+            color:#09181C;
+            
+                  }

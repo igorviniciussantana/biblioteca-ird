@@ -1,0 +1,85 @@
+import axios from 'axios'
+import Head from 'next/head'
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { toast, ToastContainer } from 'react-nextjs-toast'
+import styles from '../styles/Home.module.css'
+import Menu from './components/menu'
+import api from './api/api';
+
+
+export default function AdicionarAutor(props){
+    const [values, setValues] = useState({
+        nome: "", 
+        sobrenome:"",
+        data_nascimento:"",
+    })
+
+    let router = useRouter();
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(values)
+
+const response = await api.post("/autores", values)
+console.log(response)
+toast.notify("Autor inserido com sucesso")
+router.push('/autores')
+
+}
+
+const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setValues({ ...values, [id]: value });
+
+}; 
+
+return(
+    <>
+<Head><title>Biblioteca IRD - Bem Vindo!</title></Head>
+<div className="container">
+<Menu/>
+<ToastContainer />
+    <div className="brilho"></div>
+   
+        <h1> Cadastrar Autor </h1>
+
+        <form onSubmit={handleSubmit}>
+
+        <div>
+          <label className="nomelabel" htmlFor="nome">Nome </label>
+          <input placeholder='Insira o nome do autor'
+            id="nome"
+            type="text"
+            value={values.nome}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <div>
+          <label  className="sobrenomelabel" htmlFor="sobrenome">SobreNome </label>
+          <input placeholder='Insira o sobrenome do autor'
+            id="sobrenome"
+            type="text"
+            value={values.sobrenome}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <div>
+          <label className="datalabel" htmlFor="data">Data de Nascimento </label>
+          <input 
+            id="data_nascimento"
+            type="date"
+            value={values.data_nascimento}
+            onChange={handleInputChange}
+          />
+        </div>
+        <button className="addcategoria" type="submit">Adicionar </button>
+        </form>
+    
+</div>
+</>
+)
+}

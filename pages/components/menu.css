@@ -1,0 +1,31 @@
+
+.menu{
+color: #CEF5FF;
+padding: 0px 76px;
+}
+.menuDiv{
+
+background-color: var(--bg-color);
+
+
+}
+
+.mainMenu{
+display: flex;
+align-items: center;
+column-gap: 65px;
+
+}
+
+.mainMenu h1{
+
+font-weight: 800;
+
+}
+
+.mainMenu h1:hover,
+.mainMenu h2:hover{
+cursor: pointer;
+
+
+}
