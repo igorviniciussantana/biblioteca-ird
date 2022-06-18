@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
   }
 
 
-const retornaLivro = function({livro}) {
+const RetornaLivro = function({livro}) {
   const router = useRouter()
   const { id } = router.query
 
@@ -54,5 +54,5 @@ return(
   
 }
 
-export default retornaLivro
+export default RetornaLivro
 
