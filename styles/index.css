@@ -44,10 +44,18 @@ margin-bottom: 10px;
 
   .mainInicial h1 span{
     color:#30BFCD;
-
+    transition: 3s;
     
     
       }
+    
+      .mainInicial h1 span:hover{
+        color:#09181C;;
+     cursor: default;
+        transition: 1s;
+        
+        
+          }
 
     .mainInicial button{
         background: #30BFCD;

@@ -62,12 +62,12 @@ return(
         if(livro.autorId == {id}.id){
         return(
           <div key={livro.id} className="livroCard">
-          <Link href={'livros/'+ livro.id}><h1>{livro.titulo}</h1></Link>
+          <Link href={'/../../livros/'+ livro.id}><h1>{livro.titulo}</h1></Link>
           <p><strong>Data de Publicação:</strong> {livro.data_publicacao.substr(0,[10])}</p>
           <p><strong>ID do Autor:</strong> {livro.autorId}</p>
           <p><strong>Editora:</strong> {livro.editora}</p>
           <div className="buttonsDiv">
-          <Link href='autores'><button type="button" className='buttonAutor'>Autor</button></Link>
+          <Link href={'../' + livro.autorId}><button type="button" className='buttonAutor'>Autor</button></Link>
           <button type="button" className='buttonDeletar'>Deletar</button></div>
         
         </div>

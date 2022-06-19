@@ -80,7 +80,14 @@ button{
     margin:0
     
       }
-    
+
+        
+          .livroCard h1:hover{
+            cursor: pointer;
+            color: #27a2ad;
+            border-left: 5px solid #27a2ad;
+            transition: 500ms;
+              }
       .livroCard p{
         margin:0;
         color: #CEF5FF;    
@@ -112,3 +119,99 @@ button{
             color:#09181C;
             
                   }
+ .tela{
+   display: flex;
+   flex-direction: column;
+   height: 60vh;
+overflow-y: scroll;
+   justify-content: space-between;
+   padding-right: 20px;
+
+}   
+.tela label{
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #CEF5FF;
+  font-size: 30px;
+  padding: 10px 0 10px 10px;
+  
+}
+.tela input{
+  background-color: #CEF5FF;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  font-family: 'Poppins';
+  color:#09181C;
+  
+}
+
+.tela::-webkit-scrollbar{
+
+  width:12px;
+
+
+}
+.tela::-webkit-scrollbar-track{
+
+   background-color: #CEF5FF;
+   border-radius: 30px;
+   opacity: 0.6;
+
+
+}
+
+.tela::-webkit-scrollbar-thumb{
+
+   background-color: #2ba4af;
+   border-radius: 50px;
+
+
+}
+.addcategoria{
+border: none;
+background-color: #30C0CD;
+color:#CEF5FF;
+border-radius: 2rem;
+width: 40%;
+font-size: 20px;
+font-weight: 500;
+font-weight: 600;
+font-family: 'Poppins';
+padding: 10px 0;
+letter-spacing: 0.08em;
+transition: 500ms;
+margin-top: 20px;
+}
+.addcategoria:hover{
+  background-color: #2ba4af;
+  transition: 500ms;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  
+
+}
+.volta-livro{
+  border: none;
+background-color: #CEF5FF;
+border-radius: 2rem;
+width: 40%;
+font-size: 20px;
+font-weight: 500;
+font-weight: 600;
+font-family: 'Poppins';
+padding: 10px 0 ;
+letter-spacing: 0.08em;
+transition: 500ms;
+margin-top: 20px;
+margin-left: 20px;
+}
+.volta-livro:hover{
+  background-color: #CEF5FF;
+  transition: 500ms;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  
+
+}

@@ -47,7 +47,7 @@ const numeroLivros = function(){
 return (
     <>
 
-    <Head><title>Biblioteca IRD - Bem Vindo!</title></Head>
+    <Head><title>Biblioteca IRD - Livros</title></Head>
     <div className="container">
 <Menu/>
 <div className="brilho"></div>
@@ -69,10 +69,11 @@ return (
     }
             return(
 <div key={livro.id} className="livroCard">
-              <Link href={'livros/'+ livro.id}><h1>{livro.titulo}</h1></Link>
+              <Link href={'livros/'+ livro.id}><h1 className='livroTitulo'>{livro.titulo}</h1></Link>
               <p><strong>Data de Publicação:</strong> {livro.data_publicacao.substr(0,[10])}</p>
               <p><strong>ID do Autor:</strong> {livro.autorId}</p>
               <p><strong>Editora:</strong> {livro.editora}</p>
+              <p><strong>Preço:</strong> {livro.preco}</p>
               <div className="buttonsDiv">
               <Link href={'autores/' + livro.autorId}><button type="button" className='buttonAutor'>Autor</button></Link>
               <button type="button" className='buttonDeletar' onClick={deletar}>Deletar</button></div>

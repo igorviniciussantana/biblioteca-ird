@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Menu from './components/menu'
 import api from './api/api';
+import { toast, ToastContainer } from 'react-nextjs-toast';
 import { useState } from 'react';
 import { useRouter } from "next/router";
 
@@ -55,13 +56,14 @@ return (
   <h1 className='autoresTitle'>Autores - Temos {numeroAutores()}</h1>
   <input type="text" className='autoresInput' placeholder='Buscar autor...' onChange={(ev) => setBusca(ev.target.value)}/>
   <Link href='/addAutor'><button className='autoresButton'>Novo Autor</button></Link>
-  <div className='scroll'>
+  
+    <div className='scroll'>
  
   {filtraBusca.map((autor) => {
     
-      function deletar(){
-      const response =  api.delete("/autores/" + parseInt(autor.id))
-      alert("Autor excluido com sucesso")   
+      async function  deletar(){
+      const response =  await api.delete("/autores/" + parseInt(autor.id))
+      toast.notify("Autor excluido com sucesso")  
       router.push('/autores')
     }
             return(
@@ -98,6 +100,7 @@ return(
   <Head><title>Biblioteca IRD - Autores</title></Head>
   <div className="container">
 <Menu/>
+<ToastContainer />
 <main className='mainAutores'>
 
 <h1 className='autoresTitle'>Autores - Temos {numeroAutores()} registrados</h1>

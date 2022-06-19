@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Menu from './components/menu'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 <main className='mainInicial'>
   <div>
       <h1 className="initTitle">Onde a leitura te leva <span>a sonhar.</span></h1>
-      <button type='button' className='indexButton'>Saiba Mais</button>
+      <Link href="/livros"><button type='button' className='indexButton'>Saiba Mais</button></Link>
       
       </div>
       <img src='../reading-svg.svg'/>

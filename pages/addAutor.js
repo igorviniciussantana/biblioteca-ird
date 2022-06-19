@@ -37,17 +37,20 @@ const handleInputChange = (e) => {
 
 return(
     <>
-<Head><title>Biblioteca IRD - Bem Vindo!</title></Head>
+<Head><title>Biblioteca IRD - Autores</title></Head>
 <div className="container">
 <Menu/>
 <ToastContainer />
+
+<main className='mainAutores'>
     <div className="brilho"></div>
    
-        <h1> Cadastrar Autor </h1>
+    <h1 className='autoresTitle'> Cadastrar Autor </h1>
 
         <form onSubmit={handleSubmit}>
 
-        <div>
+        <div className="tela">
+
           <label className="nomelabel" htmlFor="nome">Nome </label>
           <input placeholder='Insira o nome do autor'
             id="nome"
@@ -55,9 +58,9 @@ return(
             value={values.nome}
             onChange={handleInputChange}
           />
-        </div>
+       
 
-        <div>
+        
           <label  className="sobrenomelabel" htmlFor="sobrenome">SobreNome </label>
           <input placeholder='Insira o sobrenome do autor'
             id="sobrenome"
@@ -65,9 +68,9 @@ return(
             value={values.sobrenome}
             onChange={handleInputChange}
           />
-        </div>
+      
 
-        <div>
+        
           <label className="datalabel" htmlFor="data">Data de Nascimento </label>
           <input 
             id="data_nascimento"
@@ -75,11 +78,23 @@ return(
             value={values.data_nascimento}
             onChange={handleInputChange}
           />
-        </div>
+       <div className="botao-livro">
         <button className="addcategoria" type="submit">Adicionar </button>
-        </form>
-    
+        <button className="volta-livro" type="submit" onClick={() =>{
+ setValues({
+      nome:"",
+      sobrenome: "", 
+        data_nascimento:""
+    })
+
+
+        }}>Limpar</button>
 </div>
+        </div>
+        </form>
+        </main>
+</div>
+
 </>
 )
 }
