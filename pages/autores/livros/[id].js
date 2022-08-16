@@ -24,9 +24,9 @@ export const getStaticProps = async () => {
     const livro = await response.data
 
     return {
-        paths: livro.map((livro) => ({ //pra cada pokemon na resposta, um caminho sera gerado
+        paths: livro.map((livro) => ({ 
             params: {
-              id: livro.autorId.toString(), //necessario usar o toString porque não aceita inteiro como caminho (path)
+              id: livro.autorId.toString(), 
             },
           })),
           fallback: false,
