@@ -28,6 +28,6 @@ Confira o protótipo do projeto abaixo:
 ## Autores
 
 - [@igoviniciussantana](https://github.com/igorviniciussantana)
-- [@iandredochute](https://github.com/andredochute)
+- [@andredochute](https://github.com/andredochute)
 
 
