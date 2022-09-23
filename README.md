@@ -27,7 +27,10 @@ Confira o protótipo do projeto abaixo:
 
 ## Autores
 
-- [@igoviniciussantana](https://github.com/igorviniciussantana)
-- [@andredochute](https://github.com/andredochute)
-
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/igorviniciussantana"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86114583?v=4" width="100px;" alt=""/><br /><sub><b>Igor Vinicius</b></sub></a><br /><a href="https://rapsound.vercel.app" title="rapSound">🎶</a></td>
+    <td align="center"><a href="https://github.com/andredochute"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86085474?v=4" width="100px;" alt=""/><br /><sub><b>André Luís</b></sub></a><br /><a href="https://rapsound.vercel.app" title="rapSound">🎶</a></td>
+    </tr>
+    </table>
 
