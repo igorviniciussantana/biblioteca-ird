@@ -1,76 +1,63 @@
-
-.containerDynamic{
-background-color: #09181C;;
-height: 100vh;
-
-
+.containerDynamic {
+  background-color: #09181c;
+  height: 100vh;
 }
 
-
-.mainDynamic{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 90vh;
-
-
+.mainDynamic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
-.dynamicCard{
-display: flex;
-flex-direction: column;
-background-color: #0F272E;
-border-radius: 1.5rem;
-align-items: center;
-justify-items: center;
-row-gap: 10px;
-width: 25%;
-padding: 30px 15px;
-min-height: 50%;
+.dynamicCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f272e;
+  border-radius: 1.5rem;
+  align-items: center;
+  justify-items: center;
+  row-gap: 10px;
+  width: 25%;
+  padding: 30px 15px;
+  min-height: 50%;
 }
 
-.dynamicCard img{
-width: 100px;
-
-
+.dynamicCard img {
+  width: 100px;
 }
-.dynamicCard h1{
-    line-height: 110%;
-color:#30C0CD;
-border-left: #30C0CD 10px solid;
-font-family: 'Poppins';
-padding-left: 10px;
-font-size: 50px;
-margin: 0;
-
-
+.dynamicCard h1 {
+  line-height: 110%;
+  color: #30c0cd;
+  border-left: #30c0cd 10px solid;
+  font-family: "Poppins";
+  padding-left: 10px;
+  font-size: 50px;
+  margin: 0;
 }
 
-.dynamicCard p{
-color:#CEF5FF;
-font-family: 'Poppins';
-margin: 0;
-width: 70%
-
-
+.dynamicCard p {
+  color: #cef5ff;
+  font-family: "Poppins";
+  margin: 0;
+  width: 70%;
 }
 
-.buttonDynamic{
-background-color: #30C0CD;
-color: #CEF5FF;
-border: 0;
-font-family: 'Poppins';
-border-radius: 0.5rem;
-font-weight: 600;
-letter-spacing: 3px;
-font-size: 18px;
-transition: 500ms;
+.buttonDynamic {
+  background-color: #30c0cd;
+  color: #cef5ff;
+  border: 0;
+  font-family: "Poppins";
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 18px;
+  transition: 500ms;
 }
 
-.buttonDynamic:hover{
-    background-color: #2699a3;
-    letter-spacing: 6px;
-    transition: 500ms;
-    cursor: pointer;
-        
-    }
+.buttonDynamic:hover {
+  background-color: #2699a3;
+  letter-spacing: 6px;
+  transition: 500ms;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
-import axios from "axios"
+import axios from "axios";
 
 const api = axios.create({
-  baseURL:"https://trabalho-final-5.igorsantanasant.repl.co"
-})
+  baseURL: "http://api-biblioteca-ird.herokuapp.com",
+});
 
 export default api;
