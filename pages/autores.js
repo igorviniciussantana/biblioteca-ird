@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 export const getStaticProps = async () => {
-  const response = await api.get("/autores/", {
+  const response = await api.get("/autores", {
     headers: {
       Accept: "application/json",
       "User-Agent": "axios 0.21.1",
