@@ -107,7 +107,7 @@ export default function Autores({ autor }) {
         </Head>
         <div className="container">
           <Menu />
-          <ToastContainer />
+        
           <main className="mainAutores">
             <h1 className="autoresTitle">
               Autores - Temos {numeroAutores()} registrados

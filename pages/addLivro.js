@@ -40,7 +40,7 @@ export default function AdicionarLivro(props) {
 
       <div className="container">
         <Menu />
-        <ToastContainer />
+       
 
         <main className="mainAutores">
           <div className="brilho"></div>
