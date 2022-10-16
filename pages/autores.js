@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import Menu from "./components/menu";
 import api from "./api/api";
 import { toast, ToastContainer } from "react-nextjs-toast";
