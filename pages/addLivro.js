@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-nextjs-toast";
 import Menu from "./components/menu";
 import api from "./api/api";
 

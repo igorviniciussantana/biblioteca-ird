@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Menu from "./components/menu";
 import api from "./api/api";
-import { toast, ToastContainer } from "react-nextjs-toast";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
