@@ -37,7 +37,7 @@ export default function AdicionarAutor(props) {
       </Head>
       <div className="container">
         <Menu />
-        <ToastContainer />
+  
 
         <main className="mainAutores">
           <div className="brilho"></div>
