@@ -6,7 +6,7 @@ import api from "./api/api";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await api.get("/livros");
   const livro = await response.data;
   return {

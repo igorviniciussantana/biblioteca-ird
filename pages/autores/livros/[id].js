@@ -3,7 +3,7 @@ import api from "./../../api/api";
 import Menu from "../../components/menu";
 import Link from "next/link";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const responseLivro = await api.get("/livros");
   const livro = await responseLivro.data;
   const responseAutor = await api.get("/autores");
@@ -16,19 +16,6 @@ export const getStaticProps = async () => {
   };
 };
 
-export async function getStaticPaths() {
-  const response = await api.get("/livros");
-  const livro = await response.data;
-
-  return {
-    paths: livro.map((livro) => ({
-      params: {
-        id: livro.autorId.toString(),
-      },
-    })),
-    fallback: false,
-  };
-}
 
 const AutorLivro = function ({ livro, autor }) {
   const router = useRouter();

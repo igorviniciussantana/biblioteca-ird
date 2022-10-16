@@ -6,7 +6,7 @@ import api from "./api/api";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await api.get("/autores", {
     headers: {
       Accept: "application/json",
@@ -14,6 +14,7 @@ export const getStaticProps = async () => {
       "Access-Control-Allow-Origin": "*",
     },
   });
+  
   const autor = await response.data;
   return {
     props: {

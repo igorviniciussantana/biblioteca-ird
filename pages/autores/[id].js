@@ -4,7 +4,7 @@ import Menu from "./../components/menu";
 import Link from "next/link";
 import Head from "next/head";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await api.get("/autores");
   const autor = await response.data;
   return {
@@ -14,19 +14,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export async function getStaticPaths() {
-  const response = await api.get("/autores");
-  const autor = await response.data;
 
-  return {
-    paths: autor.map((autor) => ({
-      params: {
-        id: autor.id.toString(),
-      },
-    })),
-    fallback: false,
-  };
-}
 
 const Dynamic = function ({ autor }) {
   const router = useRouter();
